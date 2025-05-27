@@ -94,7 +94,7 @@ class celulares {
 celular1 = new celulares("rojo","150g","5","full hd","2GB");
 celular2 = new celulares("negro","150g","5","full hd","2GB");
 celular3 = new celulares("morado","150g","5","full hd","2GB");
-celular1 = new celulares("amarillo","150g","5","full hd","2GB");
+
 
 /*
 celular1.presionarBotonEncendido();
@@ -103,9 +103,41 @@ celular1.grabarVideo();
 celular1.reiniciar();
 celular1.presionarBotonEncendido();
 */
-
+/*
 document.write(`
     ${celular1.mostrarInfo()}</br>
     ${celular2.mostrarInfo()}</br>
     ${celular3.mostrarInfo()}</br>
     `);
+*/
+
+/*
+    B) Cofla no esta satisfecho con los celulares asi que decide ir a la seccion de celulares de alta gama, donde va a poder encontrar los celulares mas caros del lugar, asi que al entrar vio dos celulares que le encantaron, estos 2 celulares de alta gama pueden hacer todo lo que podian hacer los 3 anteriores pero tambien mejores caracteristicas y ademas pueden grabar en cara super lenta, tienen reconocimiento facial y camara extra.
+
+    Crear soluciones
+    - Implementar todas estas cualidades en los celulares de alta gama
+*/
+
+class celularesAltaGama extends celulares{
+    constructor(color,peso,rdp,rdc,ram,rdce){
+        super(color,peso,rdp,rdc,ram,rdce);
+        this.rdce = rdce;
+    }
+    grabarVideoLento(){
+        alert("Estas grabando en camara lenta")
+    }
+    reconocimientoFacial(){
+        alert("Leyendo rostro")
+    }
+    infoAltaGama(){
+        return this.mostrarInfo + `Resolucion de camara trasera: ${this.rdce}`
+    }
+} 
+
+celular4 = new celularesAltaGama("rojo", "130g", "5.2","4k", "3GB", "full hd");
+celular5 = new celularesAltaGama("negro", "142g", "5.2","4k", "3GB", "full hd");
+
+document.write(`
+    ${celular4.infoAltaGama()} </br>
+    ${celular5.infoAltaGama()} </br>
+    `)
