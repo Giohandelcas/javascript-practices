@@ -41,3 +41,23 @@ class App {
         `
     }
 }
+
+app = new App("16.000", "5 estrellas", "900mb");
+app2 = new App("16.000", "5 estrellas", "900mb");
+app3 = new App("16.000", "5 estrellas", "900mb");
+app4 = new App("16.000", "5 estrellas", "900mb");
+app5 = new App("16.000", "5 estrellas", "900mb");
+app6 = new App("16.000", "5 estrellas", "900mb");
+app7 = new App("16.000", "5 estrellas", "900mb");
+
+document.write(
+    `
+    ${app.appInfo()} <br>
+    ${app2.appInfo()} <br>
+    ${app3.appInfo()} <br>
+    ${app4.appInfo()} <br>
+    ${app5.appInfo()} <br>
+    ${app6.appInfo()} <br>
+    ${app7.appInfo()} <br>
+    `
+)
