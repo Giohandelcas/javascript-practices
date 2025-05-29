@@ -1,0 +1,39 @@
+Operaciones comunes con métodos de cadena:
+
+Buscar:
+indexOf(): Devuelve el índice de la primera ocurrencia de una subcadena en la cadena. 
+lastIndexOf(): Devuelve el índice de la última ocurrencia de una subcadena. 
+includes(): Verifica si una cadena contiene una subcadena, devolviendo true o false. 
+
+
+Extraer:
+slice(): Extrae una sección de una cadena y devuelve una nueva cadena. 
+substring(): Extrae una sección de una cadena y devuelve una nueva cadena. 
+substr(): Similar a substring(), pero el segundo argumento se interpreta como la longitud de la subcadena. 
+
+
+Modificar:
+toUpperCase(): Convierte todos los caracteres de la cadena a mayúsculas. 
+toLowerCase(): Convierte todos los caracteres de la cadena a minúsculas. 
+replace(): Reemplaza la primera ocurrencia (o todas) de una subcadena con otra. 
+
+
+Verificar:
+length: Devuelve la longitud de la cadena. 
+startsWith(): Verifica si una cadena comienza con una subcadena específica. 
+endsWith(): Verifica si una cadena termina con una subcadena específica. 
+
+
+Conversión:
+join(): Une los elementos de un arreglo (array) con una cadena específica como separador. 
+split(): Divide una cadena en un arreglo de subcadenas, utilizando un separador específico. 
+
+
+
+Métodos de arreglo JavaScript
+
+push() – Inserta un elemento al final del arreglo.
+unshift() – Inserta un elemento al inicio del arreglo.
+pop() – Remueve un elemento del final del arreglo.
+shift() – Remueve un elemento del principio del arreglo.
+slice() – Crea una copia sombra del arreglo.
