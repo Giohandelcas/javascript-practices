@@ -37,3 +37,4 @@ unshift() – Inserta un elemento al inicio del arreglo.
 pop() – Remueve un elemento del final del arreglo.
 shift() – Remueve un elemento del principio del arreglo.
 slice() – Crea una copia sombra del arreglo.
+
