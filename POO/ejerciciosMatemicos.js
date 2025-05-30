@@ -1,20 +1,6 @@
-/*
-    Problema A:
-
-    - Que las funcion nos devuelva:
-        Profesro asignado
-        nombre de los alumnos
-        funcion que nos indique en cuantas clases esta cofla
-        nombre de esas clases y sus profesores
 
 
-    Problema B:
-    - Preguntarle en que materias se quiere inscribir
-    - Si ya hay 20 inscritos negarle la inscripcion 
-    - si hay menos de 20, inscribirlo y añadirlo a la lista de alumnos
-*/
-
-/* Calculadora rapida*/
+/* Calculadora mejorada*/
 
 class Calculadora {
     constructor(){
@@ -32,17 +18,26 @@ multiplicar = (num1,num2)=>{
 dividir = (num1,num2)=>{
     return parseInt(num1) / parseInt(num2);
 }
+potenciar = (num1,exponente)=>{
+    return num1**exponente
+}
+RaizCuadrada = (num)=>{
+    return  Math.sqrt(num);
+}
+Raizcubica = (num)=>{
+    return Math.cbrt(num);
+}
 }
 
 const calculadora = new Calculadora();
 
 alert("Que operacion deseas realizar");
-let operacion = prompt("1: suma, 2: resta, 3: division, 4: multiplicacion");
+let operacion = prompt("1: suma, 2: resta, 3: division, 4: multiplicacion, 5: potencial, 6:Raiz cuadrada, 7: Raiz cubica");
 
 if(operacion == 1) {
     let numero1 = prompt("primer numero para sumar");
     let numero2 = prompt("segundo numero para sumar");
-    resultado = Calculadora.sumar(numero1,numero2)
+    resultado = calculadora.sumar(numero1,numero2)
     alert(`El resultado es ${resultado}`);
 }
 else if(operacion == 2) {
@@ -54,13 +49,29 @@ else if(operacion == 2) {
 else if(operacion == 3) {
     let numero1 = prompt("primer numero para dividir");
     let numero2 = prompt("segundo numero para dividir");
-    resultado = Calculadora.dividir(numero1, numero2)
+    resultado = calculadora.dividir(numero1, numero2)
     alert(`El resultado es ${resultado}`);
 }
 else if(operacion == 4) {
     let numero1 = prompt("primer numero para multiplicar");
     let numero2 = prompt("segundo numero para multiplicar");
-    resultado = Calculadora.multiplicar(numero1, numero2)
+    resultado = calculadora.multiplicar(numero1, numero2)
+    alert(`El resultado es ${resultado}`);
+}
+else if(operacion == 5) {
+    let numero1 = prompt("primer numero para potenciar");
+    let numero2 = prompt("segundo numero exponente");
+    resultado = calculadora.potenciar(numero1, numero2)
+    alert(`El resultado es ${resultado}`);
+}
+else if(operacion == 6) {
+    let numero1 = prompt("Ingresa el numero que quieres saber la raiz cuadrada");
+    resultado = calculadora.RaizCuadrada(numero1)
+    alert(`El resultado es ${resultado}`);
+}
+else if(operacion == 7) {
+    let numero1 = prompt("Ingresa el numero que quieres saber la raiz cubica");
+    resultado = calculadora.Raizcubica(numero1)
     alert(`El resultado es ${resultado}`);
 }
 else {
