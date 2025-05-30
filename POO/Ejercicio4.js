@@ -18,10 +18,41 @@ const inscribir = (alumno,materia)=>{
     personas = materias[materia];
     personas.shift();
     alumnos = personas;
-    if(alumnos.length >= 2){
+    if(alumnos.length >= 20){
         document.write(`
             Lo siento <b>${alumno}</b> las clase de ${materia} ya esta llena 
             `)
+    } else {
+        alumnos.push(alumno);
+        if (materia == "fisica"){
+            materias = {
+                fisica: alumnos,
+                programacion: materias["programacion"],
+                logica: materias["logica"],
+                quimica: materias["quimica"],
+        }
+        } else if(meteria == "programacion"){
+            materias = {
+                fisica: materias["fisica"],
+                programacion: alumnos,
+                logica: materias["logica"],
+                quimica: materias["quimica"],
+        }
+        } else if(meteria == "logica"){
+            materias = {
+                fisica: materias["fisica"],
+                programacion: materias["programacion"],
+                logica: alumnos,
+                quimica: materias["quimica"],
+        }
+        } else if(meteria == "quimica"){
+            materias = {
+                fisica: materias["fisica"],
+                programacion: materias["programacion"],
+                logica: materias["logica"],
+                quimica: alumnos,
+        }
+        }
     }
 }
 
