@@ -152,6 +152,7 @@ hr {
 .image-1, .image-3 {
   grid-column: 1 / -1;
 }
+/* Seccion de responsive */
 
 @media only screen and (max-width: 720px) {
   .image-wrapper {
