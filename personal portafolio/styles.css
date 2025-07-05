@@ -1,0 +1,54 @@
+/*  Styles generals  */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*  Nav styles  */
+nav{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  background: rgb(232, 90, 90);
+  width: 100%;
+  height: 7%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none; 
+  gap: 10px;
+}
+
+.nav-list a{
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem;
+  transition: color 0.3s;
+  color: white;
+}
+
+.nav-list a:hover {
+  color:black;
+}
+
+/* Welcome section */
+
+.welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+h1 {
+  font-size: 70px; 
+}
