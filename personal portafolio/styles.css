@@ -4,6 +4,7 @@
   padding: 0;
   font-family: 'Raleway', sans-serif;
 }
+
 :root{
   --redmin: #be3144;
   --main-blue: #45567d;
@@ -64,6 +65,7 @@ h1 {
   font-size: 20px;
 }
 
+
 /* proyects section */
 
 .proyects-section{
@@ -81,7 +83,7 @@ h1 {
 .grid-proyect{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 4rem;
+  grid-gap: 2rem;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -89,9 +91,6 @@ h1 {
 }
 
 .proyect {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-decoration: none;
   color: white; 
   background: var(--main-gray);
@@ -104,9 +103,9 @@ h1 {
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-.proyect-img {
+.proyect-image {
   width: 100%;
-  height: auto;
+  height: calc(100% - 6.8rem);
   border-radius: 4px;
   margin-bottom: 1rem;
 }
@@ -115,4 +114,73 @@ h1 {
   color: white;
   font-weight: bold;
   margin: 0;
+}
+
+.btn-show-all {
+font-size: 1rem;
+background: var(--main-gray);
+transition: background 0.3s ease-out;
+text-decoration: none;
+color: white;
+}
+
+.btn-show-all:hover {
+background: rgb(180, 178, 178);
+color: black;
+}
+
+.btn {
+display: inline-block;
+padding: 1rem 2rem;
+border-radius: 2px;
+}
+
+/*  CONTACT SECTION  */
+
+.contact-section {
+width: 100%;
+height: 80vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0 2rem;
+color: white;
+background-color: black;
+background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%)
+}
+
+.contact-section-header h2{
+  font-size: 49px;
+  text-align: center;
+}
+
+.contact-section-header p {
+  text-align: center;
+}
+
+.contact-links {
+  margin-top: 40px;
+}
+
+.btn.contact-datails {
+  text-decoration: none; 
+  color: white;
+}
+
+.btn.contact-datails:hover {
+  color: black;
+}
+
+footer{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+width: 100%;
+height: 20vh;
+padding: 0 2rem;
+border-top: 4px solid var(--redmin);
+color: white;
+background-color: black;
+background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%)
 }
